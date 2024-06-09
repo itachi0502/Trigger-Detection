@@ -68,7 +68,7 @@ To edit the configuration file, simply open `config.yaml` in a text editor and m
 
 ```yaml
 train:
-  learning_rate: 2e-5  # Change this value
+  learning_rate: 1e-5  # Change this value
 ```
 ## Data Preparation
 ###Dataset Source
