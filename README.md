@@ -54,14 +54,20 @@ Additional package dependencies can be found in the `requirements.txt` file and 
 
 ```bash
 pip install -r requirements.txt
+```
 
-##Quick Start
-###Configuration File
-The configuration for the model, optimizer, and other settings can be found in the YAML file (config.yaml). Make sure to go through the configuration to understand the different parameters.
+## Quick Start
 
-###How to Edit the Configuration File
-To edit the configuration file, simply open config.yaml in a text editor and modify the values according to your needs. For example, to change the learning rate:
+### Configuration File
 
-```bash
+The configuration for the model, optimizer, and other settings can be found in the YAML file (`config.yaml`). Make sure to go through the configuration to understand the different parameters.
+
+#### How to Edit the Configuration File
+
+To edit the configuration file, simply open `config.yaml` in a text editor and modify the values according to your needs. For example, to change the learning rate:
+
+```yaml
 train:
   learning_rate: 2e-5  # Change this value
+```
+
