@@ -79,5 +79,5 @@ The dataset used for this project is the MLEE dataset. The original dataset can 
 ### Run the training script:
 
 ```bash
-python train.py
+CUDA_VISIBLE_DEVICES=0 python train.py --config config/mlee_train.yaml
 ```
