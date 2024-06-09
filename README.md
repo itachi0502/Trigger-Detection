@@ -64,7 +64,7 @@ The configuration for the model, optimizer, and other settings can be found in t
 
 #### How to Edit the Configuration File
 
-To edit the configuration file, simply open `config.yaml` in a text editor and modify the values according to your needs. For example, to change the learning rate:
+To edit the configuration file, simply open `mlee_pretrain.yaml` and `mlee_train.yaml` in a text editor and modify the values according to your needs. For example, to change the learning rate:
 
 ```yaml
 train:
@@ -74,6 +74,11 @@ train:
 ### Dataset Source
 The dataset used for this project is the MLEE dataset. The original dataset can be downloaded from [here](http://www.nactem.ac.uk/MLEE/#availability). The data is annotated in BIO format for sequence labeling tasks.
 
+## Pre-Training the Model
+### Run the pre-training script:
+```bash
+CUDA_VISIBLE_DEVICES=0 python train.py --config config/mlee_pretrain.yaml
+```
 
 ## Training the Model
 ### Run the training script:
