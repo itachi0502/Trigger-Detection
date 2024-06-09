@@ -70,4 +70,16 @@ To edit the configuration file, simply open `config.yaml` in a text editor and m
 train:
   learning_rate: 2e-5  # Change this value
 ```
+## Data Preparation
+###Dataset Source
+The dataset used for this project is the MLEE dataset. The original dataset can be downloaded from here. The data is annotated in BIO format for sequence labeling tasks.
 
+### Contextual Data
+In this project, contextual information is added from external sources such as Wikipedia and PubMed. Detailed steps on how to preprocess and integrate this contextual data are provided in the GitHub repository.
+
+## Training the Model
+### Run the training script:
+
+```bash
+python train.py
+```
